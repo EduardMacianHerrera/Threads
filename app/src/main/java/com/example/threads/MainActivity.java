@@ -45,14 +45,14 @@ public class MainActivity extends AppCompatActivity {
                         String data = getDataFromUrl("https://api.myip.com/");
                         Log.i("MYAPP",data);
 
-//                        handler.post(new Runnable() {
-//                            @Override
-//                            public void run() {
-//
-//                                TextView tview = findViewById(R.id.textView);
-//                                tview.setText(data);
-//                            }
-//                        });
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+
+                                TextView tview = findViewById(R.id.textView);
+                                tview.setText(data);
+                            }
+                        });
                     }
                 });
             }
